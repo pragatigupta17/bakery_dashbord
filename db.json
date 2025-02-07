@@ -1,0 +1,40 @@
+{
+"Employ": [
+    {
+      "name": "pragati ",
+      "email": "pragatigupta@gamil.com",
+      "number": "5678901234",
+      "id": "19fc"
+    },
+    {
+      "name": "prabha ",
+      "email": "prabhagupta@gamil.com",
+      "number": "5678902345"
+      
+    },
+    {
+      "name": "navya ",
+      "email": "navyagupta@gamil.com",
+      "number": "567890987654"
+      
+    },
+    {
+      "name": "shivya ",
+      "email": "shivyagupta@gamil.com",
+      "number": "567890123456789"
+      
+    },
+    {
+      "name": "vijay ",
+      "email": "vijaygupta@gamil.com",
+      "number": "0987654"
+
+    },
+    {
+      "name": "sajal ",
+      "email": "sazalgupta@gamil.com",
+      "number": "1234567890"
+      
+    }
+  ]
+}

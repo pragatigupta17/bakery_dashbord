@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sidebar Navigation</title>
+    <style>
+
+    :root{
+    --primary-color:#c98d83;
+    --secondary-color:#783b31;
+    --bg:#f2f1ec;
+    --black:#000;
+    --white:#fff;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,0.1);
+}
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--bg);
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color:var(--secondary-color);
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color:var(--secondary-color);
+    text-decoration: none;
+    display: block;
+}
+.fire{
+    display: flex;
+    flex-direction: row;
+color:var(--secondary-color);
+}
+
+.sidebar ul li a:hover {
+    color:var(--primary-color);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    color:var(--bg);
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color:var(--secondary-color);
+}
+
+.topbar {
+    background-color:var(--bg);
+    padding: 15px 20px;
+     display: flex; 
+    justify-content:space-around;
+    align-items: center;
+    
+    box-shadow: 0 2px 5px var(--box-shadow);
+}
+
+.topbar h1 {
+    margin: 0;
+}
+
+.user-info {
+    font-size: 18px;
+    color:var(--secondary-color);
+}
+p{
+    font-size: x-large;
+    color:(--primary-color);
+}
+
+.content {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 0; 
+    }
+
+    .toggle-btn {
+        display: block; 
+        background-color: #333;
+        color:var(--secondary-color);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .sidebar.active + .content {
+        margin-left: 0; 
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; 
+    }
+
+    .content {
+        margin-left: 0; 
+    }
+}
+    </style>
+</head>
+<body>
+<div class="dash">
+<div class="sidebar">
+
+<ul>
+<div class="fire">
+<li><a href="#Dashboard"><i class="fa-solid fa-fire"></i> Dashboard</a></li>
+</div>
+<div class="fire">
+
+<li><a href="table.html"><i class="fa-solid fa-chart-simple"></i> Table</a></li>
+</div>
+<div class="fire">
+
+<li><a href="insert.html"><i class="fa-solid fa-money-bills"></i>Insert</a></li>
+</div>
+<div class="fire">
+
+<li><a href="login.html"><i class="fa-solid fa-user"></i> Sign out</a></li>
+</div>
+<div class="fire">
+
+<li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+</div>
+</ul>
+</div>
+ <main>
+<header class="topbar">
+<h1>Dashboard</h1>
+<div class="user-info">
+<span class="user-name"><h2>PRAGATI GUPTA</h2></span>
+</div>
+</header>
+<section class="content">
+<p>Welcome to the Admin Dashboard!</p>
+</section>
+</main>
+</div>
+</body>
+</html>

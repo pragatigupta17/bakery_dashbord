@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./table.css">  
+
+
+    <title>JSON</title>
+</head>
+<body>
+    <div class="dash">
+        <div class="sidebar">
+        <h2>Admin</h2>
+        <ul>
+        <div class="fire">
+        <li><a href="#Dashboard"><i class="fa-solid fa-fire"></i> Dashboard</a></li>
+        </div>
+        <div class="fire">
+        
+        <li><a href="table.html"><i class="fa-solid fa-chart-simple"></i> Table</a></li>
+        </div>
+        <div class="fire">
+        
+        <li><a href="insert.html"><i class="fa-solid fa-money-bills"></i>Insert</a></li>
+        </div>
+        <div class="fire">
+        
+        <li><a href="#Sign up"><i class="fa-solid fa-user"></i> Signout</a></li>
+        </div>
+        <div class="fire">
+        
+        <li><a href="#Login"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+        </div>
+        </ul>
+        </div>
+         <main>
+        <header class="topbar">
+        <h1>User Data</h1>
+        <div class="user-info">
+        <span class="user-name"><h2>PRAGATI GUPTA</h2></span>
+        </div>
+        </header>
+        <section class="content">
+        <p>Welcome to the Admin Data!</p>
+        </section>
+        </main>
+        </div>
+        <center>
+    <table border="">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </thead>
+        <tbody id="showdata"></tbody>
+    </table>
+    <div id="edittable"></div>
+</center>
+    <script src="./index.js"></script>
+</body>
+</html>
+

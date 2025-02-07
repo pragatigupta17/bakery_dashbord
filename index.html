@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard Signup</title>
+    <style>
+    :root{
+    --primary-color:#c98d83;
+    --secondary-color:#783b31;
+    --bg:#f2f1ec;
+    --black:#000;
+    --white:#fff;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,0.1);
+}
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("./images/background4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color:var(--bg);
+        box-shadow:var(--box-shadow)
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color:var(--secondary-color);
+      }
+
+      #form {
+        margin-bottom: 15px;
+        
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color:var(--secondary-color);
+             }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="password"] {
+        width: 95%;
+        padding: 5px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        align-items: center;
+      }
+
+      button {
+        width: 98%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color:var(--bg);
+        color:var(--secondary-color);
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color:var(--secondary-color);
+        color:var(--bg);
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        button {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          width: 90%;
+          margin: 20px auto;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        button {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Admin Signup</h2>
+      <form id="signupForm" method="POST" action="login.html">
+        <div id="form">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter your Name" id="username" />
+        </div>
+        <div id="form">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your E-mail" id="email" />
+        </div>
+        <div id="form">
+          <label for="number">Number</label>
+          <input type="number" placeholder="Enter your Number" id="number" />
+        </div>
+        <div id="form">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Create your Password"
+            id="password"
+          />
+        </div>
+        <div id="form">
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Re-enter your Password"
+            id="confirm_password"
+          />
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

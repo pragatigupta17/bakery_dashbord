@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./insert.css"> -->
+    <title>TABLE</title>
+    <style>
+    :root{
+    --primary-color:#c98d83;
+    --secondary-color:#783b31;
+    --bg:#f2f1ec;
+    --black:#000;
+    --white:#fff;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,0.1);
+}
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(./images/background4.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--bg);
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color:var(--secondary-color);
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color:var(--secondary-color);
+    text-decoration: none;
+    display: block;
+}
+.fire{
+    display: flex;
+    flex-direction: row;
+color:var(--secondary-color);
+}
+
+.sidebar ul li a:hover {
+    color:var(--primary-color);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    background-color:var(--bg);
+    padding: 15px 20px;
+     display: flex; 
+    justify-content:space-around;
+    align-items: center;
+    
+    box-shadow: 0 2px 5px var(--box-shadow);
+}
+
+.topbar h1 {
+    margin: 0;
+    color:var(--secondary-color);
+}
+
+.user-info {
+    font-size: 18px;
+    color:var(--secondary-color);
+}
+p{
+    font-size: x-large;
+    color:var(--bg);
+}
+
+.content {
+    padding: 20px;
+    color
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 0; 
+        color:var(--secondary-color);
+    }
+
+    .toggle-btn {
+        display: block; 
+        background-color:var(--bg);
+        color:var(--secondary-color);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .sidebar.active + .content {
+        margin-left: 0; 
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; 
+    }
+
+    .content {
+        margin-left: 0; 
+    }
+}
+
+form {
+    max-width: 400px; 
+    margin: 80px auto; 
+    padding: 20px; 
+    align-content: center;
+    background-color:var(--bg);
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+
+input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid var(--secondary-color); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    background-color:var(--bg); 
+    color:var(--secondary-color); 
+    font-weight: 80px;
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+
+button:hover {
+    background-color:var(--secondary-color);
+    color:var(--bg);
+}
+    </style>
+    
+  </head>
+  <body>
+    <div class="dash">
+      <div class="sidebar">
+      
+      <ul>
+      <div class="fire">
+      <li><a href="#Dashboard"><i class="fa-solid fa-fire"></i> Dashboard</a></li>
+      </div>
+      <div class="fire">
+      
+      <li><a href="table.html"><i class="fa-solid fa-chart-simple"></i> Table</a></li>
+      </div>
+      <div class="fire">
+      
+      <li><a href="insert.html"><i class="fa-solid fa-money-bills"></i>Insert</a></li>
+      </div>
+      <div class="fire">
+      
+      <li><a href="#Sign up"><i class="fa-solid fa-user"></i> Signout</a></li>
+      </div>
+      <div class="fire">
+      
+      <li><a href="#Login"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+      </div>
+      </ul>
+      </div>
+       <main>
+      <header class="topbar">
+      <h1>Data Insert</h1>
+      <div class="user-info">
+      <span class="user-name"><h2>PRAGATI GUPTA</h2></span>
+      </div>
+      </header>
+      <section class="content">
+      <p>Welcome to the User-Infromation!</p>
+      </section>
+      </main>
+      </div>
+    <form ation="">
+      <lable for="">Name</lable>
+      <input type="text" id="name" /><br /><br />
+      <lable for="">Email</lable>
+      <input type="text" id="email" /><br /><br />
+      <lable for="">Number</lable>
+      <input type="text" id="number" /><br /><br />
+
+      <button onclick="insertdata()">Save Data</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
