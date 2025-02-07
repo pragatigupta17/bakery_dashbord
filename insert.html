@@ -179,6 +179,100 @@ button:hover {
     background-color:var(--secondary-color);
     color:var(--bg);
 }
+
+/* Media query for large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 250px;
+    }
+    .content {
+        margin-left: 260px;
+    }
+    form {
+        max-width: 500px;
+    }
+}
+
+/* Media query for medium screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+    }
+    form {
+        max-width: 450px;
+    }
+}
+
+/* Media query for small screens (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .sidebar {
+        width: 150px;
+    }
+    .content {
+        margin-left: 170px;
+    }
+    form {
+        max-width: 350px;
+    }
+}
+
+/* Media query for extra small screens (320px to 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+    form {
+        max-width: 300px;
+    }
+}
+
+/* Media query for mobile screens (below 320px) */
+@media (max-width: 319px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+    form {
+        max-width: 250px;
+    }
+}
+
+/* Media query for landscape mobile screens (below 768px) */
+@media (max-width: 768px) and (orientation: landscape) {
+    .sidebar {
+        width: 150px;
+    }
+    .content {
+        margin-left: 170px;
+    }
+    form {
+        max-width: 350px;
+    }
+}
+
+/* Media query for portrait mobile screens (below 480px) */
+@media (max-width: 480px) and (orientation: portrait) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+    form {
+        max-width: 250px;
+    }
+}
     </style>
     
   </head>

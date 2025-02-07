@@ -185,3 +185,78 @@ body {
         color:var(--secondary-color);
         text-align: center;
     }
+    /* Media query for large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 250px;
+    }
+    .content {
+        margin-left: 260px;
+    }
+}
+
+/* Media query for medium screens (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+    }
+    table {
+        width: 50%;
+    }
+    #edittable {
+        width: 45%;
+    }
+}
+
+/* Media query for small screens (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .sidebar {
+        width: 150px;
+    }
+    .content {
+        margin-left: 170px;
+    }
+    table {
+        width: 60%;
+    }
+    #edittable {
+        width: 50%;
+    }
+}
+
+/* Media query for extra small screens (320px to 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+    table {
+        width: 80%;
+    }
+    #edittable {
+        width: 60%;
+    }
+}
+
+/* Media query for mobile screens (below 320px) */
+@media (max-width: 319px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+    table {
+        width: 90%;
+    }
+    #edittable {
+        width: 70%;
+    }
+}
